@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Selection Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>🏥 Hospital Selection</h1>
+    <form id="hospitalForm">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="id" placeholder="ID Number" required>
+      <input type="text" name="address" placeholder="Address" required>
+
+      <label>Select First Choice</label>
+      <select id="choice1" name="choice1" required onchange="filterChoices(1)">
+        <option value="">--Choose--</option>
+        <option value="Yekatit Hospital">Yekatit Hospital</option>
+        <option value="St. Peter’s Specialized Hospital">St. Peter’s Specialized Hospital</option>
+        <option value="Minilk Hospital">Minilk Hospital</option>
+        <option value="Ras Desta Hospital">Ras Desta Hospital</option>
+        <option value="Torhayloch Hospital">Torhayloch Hospital</option>
+      </select>
+
+      <label>Select Second Choice</label>
+      <select id="choice2" name="choice2" required onchange="filterChoices(2)">
+        <option value="">--Choose--</option>
+      </select>
+
+      <label>Select Third Choice</label>
+      <select id="choice3" name="choice3" required onchange="filterChoices(3)">
+        <option value="">--Choose--</option>
+      </select>
+
+      <label>Select Fourth Choice</label>
+      <select id="choice4" name="choice4" required>
+        <option value="">--Choose--</option>
+      </select>
+
+      <button type="submit">🚀 Submit</button>
+      <p id="message"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
