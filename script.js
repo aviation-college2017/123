@@ -1,5 +1,5 @@
 
-const webhookURL = "PASTE_YOUR_WEB_APP_URL_HERE";
+const webhookURL = "https://script.google.com/macros/s/AKfycbw3g2yVFDpHxQrrfSSBQR25tXMn8IFo2wy9IzGRb3HGYUdqqp3vrUTWCq9NUgZxVMUp/exec";
 
 const hospitals = [
   "Yekatit Hospital",
